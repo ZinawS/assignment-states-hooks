@@ -1,0 +1,50 @@
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .internal-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+ .all,
+ .even{
+  width:33%;
+  color:green;
+ }
+  
+  .counter-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  .button-container{
+    display: flex;
+    gap:10px;
+  }
+  .counter-button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .counter-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
