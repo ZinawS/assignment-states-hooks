@@ -33,7 +33,7 @@ export default class MyCounter extends Component {
           <h2>Question 1 & 2:Class Based use of State & Props</h2>
           <div className="button-container">
             <Button
-              className="counter-button"
+              className="counter_button"
               onClick={this.allClicksCounter}
               title="Class Based Counter"
             />

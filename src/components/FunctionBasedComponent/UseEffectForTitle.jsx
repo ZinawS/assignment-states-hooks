@@ -19,7 +19,7 @@ function UseEffectForTitle() {
 
         <div className="button-container">
           <Button
-            className="counter-button"
+            className="counter_button"
             onClick={increment}
             title="Increase"
           />
