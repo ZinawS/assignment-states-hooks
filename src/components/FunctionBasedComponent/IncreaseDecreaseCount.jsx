@@ -33,10 +33,14 @@ function IncreaseDecreaseCount() {
   };
   // Dynamic button data
   const ButtonData = [
-    { attachedFunction: increment, title: "Increase" },
-    { attachedFunction: decrement, title: "Decrease" },
-    { attachedFunction: autoIncrement, title: "Auto-Increment" },
-    { attachedFunction: reset, title: "Reset" },
+    { attachedFunction: increment, title: "Increase", className: "counter_button" },
+    { attachedFunction: decrement, title: "Decrease", className: "counter_button" },
+    {
+      attachedFunction: autoIncrement,
+      title: "Auto-Increment",
+      className: "counter_button addition",
+    },
+    { attachedFunction: reset, title: "Reset", className: "counter_button" },
   ];
 
   return (
@@ -45,15 +49,14 @@ function IncreaseDecreaseCount() {
         <h2>Question 3:Function Based use of useState Hook</h2>
         <h4 className="all">Count: {count}</h4>
         <div className="button-container">
-          {ButtonData.map(({ attachedFunction, title }, index) => (
+          {ButtonData.map(({ attachedFunction, title,className }, index) => (
             <Button
               key={index}
-              className="counter_button"
+              className={className}
               onClick={attachedFunction}
               title={title}
             />
           ))}
-          
         </div>
       </div>
     </>
